@@ -1,0 +1,70 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+}
+/*OPTIONS--------------------------*/
+
+.AllOptions
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: darkgray;
+    padding: 1rem;
+    width: 100vw;
+}
+.option
+{
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem ;
+}
+.option:hover
+{
+    background-color: rgb(1, 104, 1);
+}
+
+
+
+/*RESPONSIVIDADE  --------------------------*/
+
+@media (min-width: 700px)
+{
+    body
+    {
+        background-image: url(img/Koala\ -\ Cópiaa3.jpg);
+        height: 100%;
+    }
+    .AllOptions
+    {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 18%;
+        background-color: transparent;
+    }
+    .option
+    {
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        padding: 0.2rem 4rem 0.2rem 0.4rem ;
+    }
+}
+
