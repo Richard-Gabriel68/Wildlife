@@ -5,33 +5,50 @@
 }
 body
 {
-    background-color: #000;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
     font-family: Arial, Helvetica, sans-serif;
 }
+body .banner
+{
+    background-image: url(img/rena21281.jpg);
+    background-position: center;
+    background-size: cover;
 
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -999;
+}
 a
 {
     text-decoration: none;
+    display: block;
+}
+ul, li
+{
+    list-style: none;
 }
 /*OPTIONS--------------------------*/
-
-.AllOptions
+.menu
 {
-    display: flex;
-    justify-content: space-between;
-    background-color: darkgray;
-    padding: 1rem;
+    display: none;
+}
+.options
+{
+    height: 100vh;
     width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
 }
 .option
 {
     color: #fff;
+    font-size: 16px;
     font-weight: bold;
-    font-size: 14px;
-    padding: 0.2rem 0.4rem 0.2rem 0.4rem ;
+    margin-bottom: 0.5rem;
+    padding: 0.2rem 4rem 0.2rem 0.4rem ;
 }
 .option:hover
 {
@@ -42,29 +59,66 @@ a
 
 /*RESPONSIVIDADE  --------------------------*/
 
-@media (min-width: 700px)
+@media (max-width: 700px)
 {
-    body
+    body .banner
     {
-        background-image: url(img/Koala\ -\ Cópiaa3.jpg);
-        height: 100%;
+        background-image: none;
+        background-color: #000;
     }
-    .AllOptions
+
+    aside
     {
-        
+        top: 0;
+        right: -45vw;
+        display: flex;
+        position: fixed;
+        z-index: 999;
+        transition: all ease 0.5s;
+    }
+    aside .menuopener
+    {
+        height: 40px;
+        width: 40px;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-        margin-top: 18%;
-        background-color: transparent;
+        justify-content: space-around;
+        margin-right: 2rem;
+        margin-top: 1rem;
     }
-    .option
+    aside .menuopener .trace
     {
-        color: #fff;
-        font-size: 16px;
-        font-weight: bold;
-        margin-bottom: 0.5rem;
-        padding: 0.2rem 4rem 0.2rem 0.4rem ;
+        width: auto;
+        height: 9px;
+        background-color: #fff;
+    }
+    aside .menu
+    {
+        width: 45vw;
+        height: 100vh;
+        background-color: rgb(174, 199, 193);
+        border-radius: 15px 0 0 15px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    aside .menu a
+    {
+        color: #000;
+        font-weight: 800;
+        margin: 1.5rem 0;
+        text-transform: uppercase;
+    }
+    aside .menu a:hover
+    {
+        color: green;
+    }
+
+    .options
+    {
+        display: none;
     }
 }
 

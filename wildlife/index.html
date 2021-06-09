@@ -7,12 +7,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="AllOptions">
-        <a href="#"><div class="option">About us</div></a>
-        <a href="#"><div class="option">Gallery</div></a>
-        <a href="animals.html"><div class="option">Animals</div></a>
-        <a href="#"><div class="option">Contacts</div></a>
+    <div class="banner"></div>
+    <aside>
+        <div onclick="menu.abrir()" class="menuopener">
+            <div class="trace"></div>
+            <div class="trace"></div>
+            <div class="trace"></div>
+        </div>
+
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="animals.html">Animals</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <div class="options">
+        <nav>
+            <a href="#" class="option">About Us</a>
+            <a href="#" class="option">Gallery</a>
+            <a href="#" class="option">Animals</a>
+            <a href="#" class="option">Contacts</a>
+        </nav>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
