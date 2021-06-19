@@ -5,18 +5,12 @@
 }
 body
 {
-    font-family: Arial, Helvetica, sans-serif;
-}
-body .banner
-{
-    background-image: url(img/rena21281.jpg);
+    font-family: 'Rubik', sans-serif;
+    background-color: #000;
+    background-image: url(img/grama1.jpg);
+
     background-position: center;
     background-size: cover;
-
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: -999;
 }
 a
 {
@@ -32,29 +26,43 @@ ul, li
 {
     display: none;
 }
-.options
-{
-    height: 100vh;
-    width: 100vw;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-}
-.option
+header h1
 {
     color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    padding: 0.2rem 4rem 0.2rem 0.4rem ;
+    text-align: center;
+    font-size: 70px;
+    margin-top: 2rem;
 }
-.option:hover
+main .all-icons
 {
-    background-color: rgb(1, 104, 1);
-}
+    width: 70vw;
+    height: 300px;
+    margin: auto;
+    margin-top: 2rem;
+    overflow: hidden;
 
+    /*border: 1px solid rgb(255, 200, 200);*/
+}
+main .all-icons .icons
+{
+    height: 100%;
+    width: 1000vw;
+    display: flex;
+    transition: all ease 0.5s;
+}
+main .all-icons .icons .icon
+{
+    width: 250px;
+    height: auto;
+    background-color: rgba(216, 216, 216, 0.664);
+    border-radius: 10px;
+    margin: 0.5rem 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
 
 
 /*RESPONSIVIDADE  --------------------------*/
