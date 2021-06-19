@@ -6,10 +6,11 @@
     <title>WildLife</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/557a9eecff.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--<div class="banner"></div>-->
+    
     <aside>
         <div onclick="menu.abrir()" class="menuopener">
             <div class="trace"></div>
@@ -28,30 +29,53 @@
             </nav>
         </div>
     </aside>
-    <!--
-    <div class="options">
-        <nav>
-            <a href="#" class="option">About Us</a>
-            <a href="#" class="option">Gallery</a>
-            <a href="#" class="option">Animals</a>
-            <a href="#" class="option">Contacts</a>
-        </nav>
-    </div>
-    -->
    
     <header>
         <h1>WildLife</h1>
     </header>
 
     <main>
+        <div class="controls">
+            <i class="fas fa-chevron-left" onclick="goPrev()"></i>
+            <i class="fas fa-chevron-right" onclick="goNext()"></i>
+        </div>
         <div class="all-icons">
             <div class="icons">
-                <div class="icon">1</div>
-                <div class="icon">2</div>
-                <div class="icon">3</div>
-                <div class="icon">4</div>
-                <div class="icon">5</div>
-                <div class="icon">6</div>
+                <div class="icon">
+                    <div class="animalphoto" style="background-image: url(img/corujap.jpg)"></div>
+                    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <div class="button">Ver mais...</div>
+                </div>
+
+                <div class="icon">
+                    <div class="animalphoto" style="background-image: url(img/camaleaop.jpg)"></div>
+                    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <div class="button">Ver mais...</div>
+                </div>
+
+                <div class="icon">
+                    <div class="animalphoto" style="background-image: url(img/papagaiop.jpg)"></div>
+                    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <div class="button">Ver mais...</div>
+                </div>
+
+                <div class="icon">
+                    <div class="animalphoto" style="background-image: url(img/ursop.jpg)"></div>
+                    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <div class="button">Ver mais...</div>
+                </div>
+
+                <div class="icon">
+                    <div class="animalphoto" style="background-image: url(img/ursop.jpg)"></div>
+                    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <div class="button">Ver mais...</div>
+                </div>
+
+                <div class="icon">
+                    <div class="animalphoto" style="background-image: url(img/ursop.jpg)"></div>
+                    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <div class="button">Ver mais...</div>
+                </div>
             </div>
         </div>
     </main>

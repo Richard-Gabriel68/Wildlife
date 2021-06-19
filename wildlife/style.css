@@ -21,7 +21,7 @@ ul, li
 {
     list-style: none;
 }
-/*OPTIONS--------------------------*/
+/*MAIN--------------------------*/
 .menu
 {
     display: none;
@@ -32,6 +32,21 @@ header h1
     text-align: center;
     font-size: 70px;
     margin-top: 2rem;
+}
+main .controls
+{
+    position: absolute;
+    width: 83vw;
+    margin: 0 10vw;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+main i
+{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
 }
 main .all-icons
 {
@@ -59,9 +74,39 @@ main .all-icons .icons .icon
     margin: 0.5rem 0.5rem;
 
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
+    flex-direction: column;
+    align-items: center
+}
+main .all-icons .icons .icon .animalphoto
+{
+    height: 50%;
+    width: 90%;
+    margin: 0.8rem 0;
+    border-radius: 10px;
+
+    background-position: center;
+    background-size: cover;
+
+}
+main .all-icons .icons .icon .description
+{
+    text-align: center;
+}
+main .all-icons .icons .icon .button
+{
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid #000000;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+main .all-icons .icons .icon .button:hover
+{
+    background-color: rgba(31, 104, 46, 0.644);
+    color: #fff;
+    transition: all ease 0.5s;
 }
 
 
