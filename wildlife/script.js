@@ -29,7 +29,7 @@ function updateMargin()
     document.querySelector('.icons').style.marginLeft = `-${newMargin}px`;
 }
 
-//let timer = setInterval(goNext, 5000);
+let timer = setInterval(goNext, 5000);
 
 
 let menu =
