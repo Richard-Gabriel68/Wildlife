@@ -1,0 +1,3 @@
+This is a website about the wild life.
+
+In the future there will be a lot of interesting information...
